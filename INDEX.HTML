@@ -47,13 +47,20 @@
         </section>
         <!-- Adicione mais poemas aqui -->
     </main>
-    <f0ooter>
+    <footer>
         <p>&copy; 2024 Poemas Divertidos. Todos os direitos reservados.</p>
-    </f0ooter>
-    <audio autoplay loop>
+    </footer>
+    <button onclick="playMusic()">Clique para tocar música</button>
+    <audio id="background-music" loop>
         <source src="WhatsApp Audio 2024-06-12 at 11.38.16.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
     
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('background-music');
+            audio.play();
+        }
+    </script>
 </body>
 </html>
